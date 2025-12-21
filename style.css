@@ -1,0 +1,174 @@
+ :root{
+            --font-family1: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            --font-family2: Muli, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            --base-color:white;
+            --contrast-color:#bd5d38;
+            --text-color1:gray;
+            --text-color2:black;
+            --bs-primary-rgb: 189, 93, 56;
+             --bs-link-color: #bd5d38;
+  --bs-link-hover-color: #974a2d;
+            
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            
+        }
+        .wrapper{
+            display:flex;
+            width: 100%;
+
+        }
+        hr {
+        margin: 1rem 0;
+        color: inherit;
+        border: 0;
+        border-top: 1px solid;
+        opacity: 0.25;
+        }
+        .sidebar{
+             position: fixed;
+            top: 0;
+            left: 0;
+
+            width: 280px;        /* IMPORTANT */
+            height: 100vh;
+
+            padding: 20px;
+            background-color: var(--contrast-color);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+     
+        .profile_img{
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            border: 10px solid rgba(255, 255, 255, 0.2)
+        }
+        li{
+            list-style-type: none;
+        }
+        li a{
+            
+            text-decoration: none;
+            color: antiquewhite;
+            text-transform: uppercase;
+            font-size: 1em;
+            font-weight:bold
+        }
+        a {
+            color: var(--bs-link-color);
+            text-decoration: underline;
+            }
+            a:hover {
+            color: var(--bs-link-hover-color);
+            }
+        .content{
+            margin-left: 280px;   /* SAME as sidebar width */
+            flex-shrink: 1;
+        }
+        .info{
+            padding:3rem 5rem;
+        }
+       h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-family: var(--font-family1);
+        font-weight: 700;
+        line-height: 1.2;
+        color: #343a40;
+        }
+        .h1{
+           
+            font-size: 5rem;
+            
+        }
+        .h2{
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.2;
+            
+        }
+        .h3{
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            
+           
+        }
+        .subheading {
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #6c757d;
+        }
+
+
+        .mb-5{
+            margin-bottom: 3rem !important;
+        }
+        .span_text{
+            color: #bd5d38;
+            font-family: var(--font-family1);
+        }
+        h3{
+            color: var(--text-color1);
+            color:var(--text-color1)
+            font-weight: normal;
+            font-size: 2rem;
+        }
+        h4{
+                font-weight: 500;
+                font-size: 1.5rem;
+        }
+        p{
+            color: var(--text-color1);
+            font-family: var(--font-family2);
+            font-size: 1.15rem;
+            font-weight: 400;
+            padding-top: 20px;
+            line-height: 1.5rem;
+            word-spacing: .2rem;
+            margin-bottom: 3rem !important;
+        }
+        .text{
+            color: var(--text-color1);
+            font-family: var(--font-family2);
+            font-size: 1rem;
+            font-weight: 400;
+            padding-top: 20px;
+            line-height: 1.5rem;
+            word-spacing: .2rem;
+            margin-bottom: 3rem !important;
+        }
+       .icon_img{
+        margin-right: 1rem;
+       }
+       .d-flex {
+    display: flex !important;
+}
+    .flex_grow {
+    flex-grow: 1 !important;
+}
+.flex_shrink {
+    flex-shrink: 0 !important;
+}
+.text_primary{
+    color: rgba(var(--bs-primary-rgb), 1) !important;
+}
+.tools_icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.tick_img{
+    vertical-align: middle;
+}
