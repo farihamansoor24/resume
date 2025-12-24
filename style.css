@@ -89,6 +89,7 @@
 
  .info {
      padding: 3rem 5rem;
+     min-height: 100vh;
  }
 
  h6,
